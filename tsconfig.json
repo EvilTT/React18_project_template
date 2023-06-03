@@ -1,0 +1,37 @@
+{
+	"compilerOptions": {
+		"target": "ES6",
+		"lib": ["DOM", "ESNext"],
+		"jsx": "react",
+		"useDefineForClassFields": true,
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"baseUrl": "./",
+		"paths": {
+			"@components/*": ["src/components/*"],
+			"@hooks/*": ["src/hooks/*"],
+			"@pages/*": ["src/pages/*"],
+			"@views/*": ["src/views/*"]
+		},
+		"moduleSuffixes": [".tsx", ".ts", ""],
+		"resolveJsonModule": true,
+		"removeComments": true,
+		"isolatedModules": true,
+		"esModuleInterop": true,
+		"strict": true,
+		"alwaysStrict": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": false,
+		"exactOptionalPropertyTypes": true,
+		"noImplicitReturns": false,
+		"noFallthroughCasesInSwitch": true,
+		"noUncheckedIndexedAccess": true,
+		"noImplicitOverride": true,
+		"noPropertyAccessFromIndexSignature": false,
+		"allowUnusedLabels": false,
+		"allowUnreachableCode": false,
+		"skipLibCheck": true
+	},
+	"include": ["src/**/*", "global.d.ts"],
+	"exclude": ["./node_modules", "./public", "./build"]
+}
