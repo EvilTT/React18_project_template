@@ -7,6 +7,7 @@
     "extends": [
         "plugin:react/recommended",
         "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/strict",
         "prettier",
         "plugin:prettier/recommended",
         "plugin:import/recommended"
@@ -23,6 +24,26 @@
     "plugins": ["react", "@typescript-eslint", "react-hooks"],
     "rules": {
         "react/display-name": "off",
+        "@typescript-eslint/recommended": [
+            "error",
+            { "prefer": "type-imports" }
+        ],
+        "no-unused-vars": [
+            "error",
+            {
+                "argsIgnorePattern": "^_",
+                "ignoreRestSiblings": true,
+                "destructuredArrayIgnorePattern": "^_"
+            }
+        ],
+        "arrow-body-style": ["error", "as-needed"],
+        "react/self-closing-comp": [
+            "error",
+            {
+                "component": true,
+                "html": true
+            }
+        ],
         "no-use-before-define": 1,
         "@typescript-eslint/no-use-before-define": ["warn"],
         "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
