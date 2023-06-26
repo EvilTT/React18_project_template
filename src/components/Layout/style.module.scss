@@ -1,0 +1,14 @@
+@import '../../scss//constants.scss';
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    margin: 7px;
+    border-radius: 20px;
+    background-color: $bg-color;
+    border: 1px solid $border-color;
+}
+
+.link_wrapper {
+    padding-left: 20px;
+}
