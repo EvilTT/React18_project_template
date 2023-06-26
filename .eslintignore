@@ -7,3 +7,5 @@ build
 .eslintcache
 .stylelintcache
 package-lock.json
+tsconfig.json
+package.json

@@ -19,12 +19,13 @@
             "jsx": true
         },
         "ecmaVersion": 12,
-        "sourceType": "module"
+        "sourceType": "module",
+        "project": ["./tsconfig.json"]
     },
     "plugins": ["react", "@typescript-eslint", "react-hooks"],
     "rules": {
         "react/display-name": "off",
-        "@typescript-eslint/recommended": [
+        "@typescript-eslint/consistent-type-imports": [
             "error",
             { "prefer": "type-imports" }
         ],
@@ -44,7 +45,7 @@
                 "html": true
             }
         ],
-        "no-use-before-define": 1,
+        "no-use-before-define": "off",
         "@typescript-eslint/no-use-before-define": ["warn"],
         "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
         "import/extensions": [
