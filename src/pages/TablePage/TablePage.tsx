@@ -38,6 +38,86 @@ const data = [
 		age: 22,
 		surname: 'zavadskiy',
 	},
+	{
+		name: 'max',
+		age: 22,
+		surname: 'zavadskiy',
+	},
+	{
+		name: 'max',
+		age: 22,
+		surname: 'zavadskiy',
+	},
+	{
+		name: 'max',
+		age: 22,
+		surname: 'zavadskiy',
+	},
+	{
+		name: 'max',
+		age: 22,
+		surname: 'zavadskiy',
+	},
+	{
+		name: 'max',
+		age: 22,
+		surname: 'zavadskiy',
+	},
+	{
+		name: 'max',
+		age: 22,
+		surname: 'zavadskiy',
+	},
+	{
+		name: 'max',
+		age: 22,
+		surname: 'zavadskiy',
+	},
+	{
+		name: 'max',
+		age: 22,
+		surname: 'zavadskiy',
+	},
+	{
+		name: 'max',
+		age: 22,
+		surname: 'zavadskiy',
+	},
+	{
+		name: 'max',
+		age: 22,
+		surname: 'zavadskiy',
+	},
+	{
+		name: 'max',
+		age: 22,
+		surname: 'zavadskiy',
+	},
+	{
+		name: 'max',
+		age: 22,
+		surname: 'zavadskiy',
+	},
+	{
+		name: 'max',
+		age: 22,
+		surname: 'zavadskiy',
+	},
+	{
+		name: 'max',
+		age: 22,
+		surname: 'zavadskiy',
+	},
+	{
+		name: 'max',
+		age: 22,
+		surname: 'zavadskiy',
+	},
+	{
+		name: 'max',
+		age: 22,
+		surname: 'zavadskiy',
+	},
 ]
 
 const TablePage: FC = () => (
@@ -46,6 +126,7 @@ const TablePage: FC = () => (
 		data={data}
 		title='DataTable'
 		CSSTitleStyles={{ fontSize: '25px' }}
+		stickyHeader
 	/>
 )
 

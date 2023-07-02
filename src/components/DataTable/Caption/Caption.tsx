@@ -9,18 +9,17 @@ export const Caption: FC<IProps> = ({
 	CSSTitleClassName,
 	CSSTitleStyles,
 	title: Title,
-}) => {
-	CSSTitleClassName ??= s.titleText
-
-	return (
-		<>
-			{Title && (
-				<caption
-					className={cn(s.title, CSSTitleClassName)}
-					style={CSSTitleStyles}>
-					{typeof Title === 'string' ? Title : <Title />}
-				</caption>
-			)}
-		</>
-	)
-}
+	stickyHeader,
+}) => (
+	<>
+		{Title && (
+			<caption
+				className={cn(s.title, CSSTitleClassName, {
+					[`${s.stickyHeader}`]: stickyHeader,
+				})}
+				style={CSSTitleStyles}>
+				{typeof Title === 'string' ? Title : <Title />}
+			</caption>
+		)}
+	</>
+)

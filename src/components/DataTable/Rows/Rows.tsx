@@ -5,6 +5,7 @@ import type { FC } from 'react'
 import type { IProps } from './type'
 
 import s from './style.module.scss'
+
 export const Rows: FC<IProps> = ({ data, keyField = 'id', colums }) => (
 	<tbody>
 		{data.map((item, i) => {

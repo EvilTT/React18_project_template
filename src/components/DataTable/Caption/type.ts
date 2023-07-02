@@ -7,4 +7,6 @@ export interface IProps {
 	CSSTitleStyles?: CSSProperties
 	/** Пользовательский класс для заголовка */
 	CSSTitleClassName?: string
+	/** Фиксированное при скроле название таблицы */
+	stickyHeader?: boolean
 }

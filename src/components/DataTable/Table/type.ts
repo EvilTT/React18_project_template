@@ -1,6 +1,6 @@
-import type { ICaptionProps } from './Caption'
-import type { IColumsHeadersProps } from './ColumsHeaders'
-import type { IRowsProps } from './Rows'
+import type { ICaptionProps } from '../Caption'
+import type { IColumsHeadersProps } from '../ColumsHeaders'
+import type { IRowsProps } from '../Rows'
 
 export interface IProps {
 	/**  Включает выбор строк */
