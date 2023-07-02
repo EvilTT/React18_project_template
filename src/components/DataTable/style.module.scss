@@ -1,0 +1,20 @@
+.table {
+    width: 100%;
+    empty-cells: show;
+    table-layout: fixed;
+    border-collapse: collapse;
+    td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+
+    th {
+        text-align: left;
+        border-collapse: collapse;
+        padding-left: 5px;
+    }
+}
+
+.layoutAuto {
+    table-layout: auto;
+}

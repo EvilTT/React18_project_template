@@ -21,5 +21,8 @@ export const Menu: FC = () => (
 		<Grid.Container direction='column'>
 			<Link link='calendar' value='Calendar' icon={Calendar} />
 		</Grid.Container>
+		<Grid.Container direction='column'>
+			<Link link='table' value='Table' />
+		</Grid.Container>
 	</div>
 )

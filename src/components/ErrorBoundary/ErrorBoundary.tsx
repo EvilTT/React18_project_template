@@ -18,5 +18,5 @@ export const ErrorBoundary: FC = () => {
 	}
 	const isRouteError = isRouteErrorResponse(error)
 
-	return <div className={s.wrapper}></div>
+	return <div className={s.wrapper} />
 }

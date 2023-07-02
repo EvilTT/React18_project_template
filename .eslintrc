@@ -61,7 +61,7 @@
         "@typescript-eslint/explicit-function-return-type": "off",
         "max-len": [
             "warn",
-            { "code": 80, "ignoreComments": true, "ignoreUrls": true }
+            { "code": 140, "ignoreComments": true, "ignoreUrls": true }
         ],
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",

@@ -3,6 +3,7 @@
 *.svg
 node_modules
 build
+__test__
 
 .eslintcache
 .stylelintcache
