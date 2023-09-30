@@ -19,11 +19,13 @@
             "jsx": true
         },
         "ecmaVersion": 12,
-        "sourceType": "module"
+        "sourceType": "module",
+        "project": ["./tsconfig.json"]
     },
     "plugins": ["react", "@typescript-eslint", "react-hooks"],
     "rules": {
-        "@typescript-eslint/recommended": [
+        "react/display-name": "off",
+        "@typescript-eslint/consistent-type-imports": [
             "error",
             { "prefer": "type-imports" }
         ],
@@ -43,7 +45,7 @@
                 "html": true
             }
         ],
-        "no-use-before-define": 1,
+        "no-use-before-define": "off",
         "@typescript-eslint/no-use-before-define": ["warn"],
         "react/jsx-filename-extension": ["error", { "extensions": [".tsx"] }],
         "import/extensions": [
@@ -59,7 +61,7 @@
         "@typescript-eslint/explicit-function-return-type": "off",
         "max-len": [
             "warn",
-            { "code": 80, "ignoreComments": true, "ignoreUrls": true }
+            { "code": 140, "ignoreComments": true, "ignoreUrls": true }
         ],
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "warn",

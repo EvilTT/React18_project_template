@@ -9,6 +9,7 @@ import FileManagerPlugin from 'filemanager-webpack-plugin'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import ImageMinimizerPlugin from 'image-minimizer-webpack-plugin'
 import ReactRefreshPlugin from '@pmmmwh/react-refresh-webpack-plugin'
+// import { create } from 'sass-alias'
 
 //NOTE: Global variables for ES6 modules, because in ES6 modules unsupported node global variables
 const __filename = fileURLToPath(import.meta.url)
@@ -76,6 +77,17 @@ const PostCSSLoader = {
 	},
 }
 
+// const SASSLoader = {
+// 	loader: 'sass-loader',
+// 	options: {
+// 		sassOptions: {
+// 			importer: create({
+// 				'@constants': path.join(__dirname, 'src/scss'),
+// 			}),
+// 		},
+// 	},
+// }
+
 const styleLoader = isDevelopmentMode
 	? 'style-loader'
 	: MiniCssExtractPlugin.loader
@@ -108,7 +120,7 @@ export default {
 		static: {
 			directory: path.resolve(__dirname, 'public'),
 		},
-		port: 8080,
+		port: 8082,
 		compress: true,
 		open: true,
 		hot: true,
@@ -152,15 +164,19 @@ export default {
 				type: 'asset/resource',
 			},
 			{
-				test: /\.svg$/i,
-				type: 'asset/inline', //TODO: inline or resource, for tests
-				generator: {
-					filename: path.join(
-						'icons',
-						isDevelopmentMode
-							? '[name].[ext]'
-							: '[name]._[contenthash]_[ext]'
-					),
+				test: /\.svg$/,
+				use: [
+					{
+						loader: '@svgr/webpack',
+						options: {
+							typescript: true,
+							ext: 'tsx',
+						},
+					},
+				],
+				type: 'javascript/auto',
+				issuer: {
+					and: [/\.(ts|tsx|js|jsx|md|mdx)$/],
 				},
 			},
 			{

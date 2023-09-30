@@ -8,10 +8,12 @@
 		"moduleResolution": "node",
 		"baseUrl": "./",
 		"paths": {
-			"@components/*": ["src/components/*"],
+			"@components/*": ["src/components/index.ts"],
 			"@hooks/*": ["src/hooks/*"],
+			"@constants/*": ["src/constants/*"],
 			"@pages/*": ["src/pages/*"],
-			"@views/*": ["src/views/*"]
+			"@utils/*": ["src/utils/*"],
+			"@routes/*": ["src/routes/index.ts"]
 		},
 		"moduleSuffixes": [".tsx", ".ts", ""],
 		"resolveJsonModule": true,
@@ -20,7 +22,6 @@
 		"esModuleInterop": true,
 		"strict": true,
 		"alwaysStrict": true,
-		"noUnusedLocals": true,
 		"noUnusedParameters": false,
 		"exactOptionalPropertyTypes": true,
 		"noImplicitReturns": false,

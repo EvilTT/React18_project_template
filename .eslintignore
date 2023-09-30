@@ -3,7 +3,10 @@
 *.svg
 node_modules
 build
+__test__
 
 .eslintcache
 .stylelintcache
 package-lock.json
+tsconfig.json
+package.json
