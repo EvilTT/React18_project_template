@@ -10,10 +10,7 @@
 		"paths": {
 			"@components/*": ["src/components/index.ts"],
 			"@hooks/*": ["src/hooks/*"],
-			"@constants/*": ["src/constants/*"],
-			"@pages/*": ["src/pages/*"],
-			"@utils/*": ["src/utils/*"],
-			"@routes/*": ["src/routes/index.ts"]
+			"@pages/*": ["src/pages/*"]
 		},
 		"moduleSuffixes": [".tsx", ".ts", ""],
 		"resolveJsonModule": true,

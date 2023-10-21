@@ -1,10 +1,10 @@
 {
-	"name": "react-films",
+	"name": "react18_template",
 	"engines": {
-		"node": "18.16.0"
+		"node": "^18.16.0"
 	},
 	"type": "module",
-	"private": true,
+	"private": false,
 	"scripts": {
 		"dev": "webpack serve --progress --mode=development",
 		"build": "webpack --progress --mode=production",
@@ -79,15 +79,7 @@
 		"webpack-dev-server": "^4.15.0"
 	},
 	"dependencies": {
-		"@geist-ui/core": "^2.3.8",
-		"@geist-ui/icons": "^1.0.2",
-		"@reduxjs/toolkit": "^1.9.5",
-		"classnames": "^2.3.2",
 		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"react-helmet": "^6.1.0",
-		"react-redux": "^8.1.0",
-		"react-router-dom": "^6.13.0",
-		"reset-css": "^5.0.1"
+		"react-dom": "^18.2.0"
 	}
 }
